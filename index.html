@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Responsive</title>
+    <link
+      rel="shortcut icon"
+      href="./img/favicon.png"
+      type="image/x-icon"
+      id="favicon"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- js -->
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body id="body">
+    <div class="page-container">
+      <header class="header">
+        <nav class="nav">
+          <a href="#" class="logo-link">
+            <div class="logo-contianer">
+              <img src="./img/logo.png" alt="logo" class="logo" id="img-logo" />
+            </div>
+          </a>
+          <ul class="menu" id="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <span class="material-symbols-outlined">
+                  collections_bookmark
+                </span>
+                <span class="menu__text"> Directorio </span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <span class="material-symbols-outlined"> backpack </span>
+                <span class="menu__text"> Emisión </span>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <span class="material-symbols-outlined"> system_update </span>
+                <span class="menu__text"> Descargar App </span>
+              </a>
+            </li>
+            <li class="menu__item menu__dropdown">
+              <a href="#" class="menu__link">
+                <span class="material-symbols-outlined"> bookmarks </span>
+                <span class="menu__text"> Favoritos </span>
+                <span class="material-symbols-outlined dropdown-btn">
+                  expand_more
+                </span>
+              </a>
+              <ul class="submenu">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <span class="material-symbols-outlined">
+                      video_library
+                    </span>
+                    <span class="menu__text"> Animes </span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <span class="material-symbols-outlined"> dvr </span>
+                    <span class="menu__text"> Ovas </span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <span class="material-symbols-outlined"> tv </span>
+                    <span class="menu__text"> Películas </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item menu__dropdown">
+              <a href="#" class="menu__link">
+                <span class="material-symbols-outlined"> folder_open </span>
+                <span class="menu__text"> Colección </span>
+                <span class="material-symbols-outlined dropdown-btn">
+                  expand_more
+                </span>
+              </a>
+              <ul class="submenu">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <span class="material-symbols-outlined">
+                      library_add_check
+                    </span>
+                    <span class="menu__text"> Vistos </span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <span class="material-symbols-outlined"> slideshow </span>
+                    <span class="menu__text"> Por Ver </span>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    <span class="material-symbols-outlined">
+                      video_settings
+                    </span>
+                    <span class="menu__text"> En Proceso </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item auth">
+              <a href="#" class="menu__link">
+                <span class="material-symbols-outlined auth__icon">
+                  logout
+                </span>
+                Inicia Sesión
+              </a>
+              <a href="#" class="menu__link">
+                <span class="material-symbols-outlined auth__icon">
+                  login
+                </span>
+                Create una Cuenta
+              </a>
+            </li>
+          </ul>
+          <div class="menu-opts">
+            <div class="theme" id="theme">
+              <div class="theme__btn">
+                <span class="material-symbols-outlined theme__sun">
+                  sunny
+                </span>
+                <span class="material-symbols-outlined theme__moon">
+                  dark_mode
+                </span>
+              </div>
+            </div>
+            <span class="material-symbols-outlined search-btn" id="search-btn">
+              search
+            </span>
+            <form action="#" class="search" id="search">
+              <span
+                class="material-symbols-outlined search-btn__left"
+                id="search-btn-left"
+              >
+                arrow_back
+              </span>
+              <input
+                class="search__control"
+                type="text"
+                placeholder="Busca un anime... :3"
+                id="search-control"
+              />
+              <span
+                class="material-symbols-outlined search-btn__search"
+                id="search-btn-search"
+              >
+                search
+              </span>
+
+              <span
+                class="material-symbols-outlined search-btn__cancel"
+                id="search-btn-clear"
+              >
+                close
+              </span>
+            </form>
+            <div class="menu-opts__auth">
+              <a href="#" class="menu__link"> Inicia Sesión </a>
+              <a href="#" class="menu__link"> Create una Cuenta </a>
+            </div>
+            <div class="menu-btn" id="menu-btn">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
+  </body>
+</html>
